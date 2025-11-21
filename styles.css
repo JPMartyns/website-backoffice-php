@@ -1,0 +1,266 @@
+
+:root {
+  font-size: 16px;
+  --cor-facebook: #2c9cd9;
+  --cor-instagram-gradient: linear-gradient(
+    to right,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  );
+  --cor-linkedin: #0077b5;
+  --cor-whatsapp: rgb(117, 207, 117);
+  --cor-youtube: red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #c1c1c1;
+}
+
+#logo {
+  overflow: hidden;
+  text-align: center;
+}
+
+#logo img {
+  max-width: 100%;
+  text-align: center;
+}
+
+header div {
+  padding-top: 5px;
+  background-color: #2b3035;
+}
+
+p {
+  text-align: justify;
+  line-height: 150%;
+}
+
+section h2 {
+    text-align: left;
+    border-bottom: 4px dashed #2b3035;
+    border-top: 4px dashed #2b3035;
+    transition: 1s;
+    margin-top: 10px;
+}
+
+section:hover h2 {
+    border-bottom: 4px solid #2b3035;
+    border-top: 4px solid #2b3035;
+    padding-left: 4rem;
+    transition: 1s;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgb(63, 63, 63);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(231, 231, 231);
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+a:active {
+  color: rgb(99, 99, 99);
+}
+
+a:hover {
+  color: rgb(220, 220, 220);
+}
+
+nav ul li a:hover {
+  background-color: rgb(143, 143, 143);
+  
+  transition: 1s;
+  clip-path: polygon(0 11%, 100% 11%, 100% 100%, 0% 100%);
+}
+
+nav ul li.nav-item {
+  padding: 5px;
+  font-size: 20px;
+}
+
+section {
+  clear: both;
+  padding-bottom: 15px;
+  max-width: 100%;
+}
+
+#galeria a img {
+  width: 100%;
+  /* height: 150px; */
+  aspect-ratio: 16 /9;
+  object-fit: cover;
+}
+
+#galeria a:hover img {
+  filter: opacity(0.9);
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #2b3035;
+  color: white;
+  margin-bottom: 5px;
+}
+
+footer ul .list-group-item {
+  background-color: transparent;
+  border: transparent;
+  padding-right: 10px;
+}
+
+/*NESTING CSS*/
+
+footer ul li.list-group-item a {
+  & .fa-square-facebook {
+    color: var(--cor-facebook);
+  }
+
+  & .fa-square-instagram {
+    background: var(--cor-instagram-gradient);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  & .fa-linkedin {
+    color: var(--cor-linkedin);
+  }
+
+  & .fa-square-whatsapp {
+    color: var(--cor-whatsapp);
+  }
+
+  & .fa-square-youtube {
+    color: var(--cor-youtube);
+  }
+}
+
+footer ul li.list-group-item a:hover {
+  opacity: 0.5;
+}
+
+footer ul li .fa-brands {
+  font-size: 1.5rem;
+}
+
+.fa-xl {
+  line-height: 1em;
+}
+/* form */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #9a9a9a;
+  box-shadow: 0px 0px 10px rgb(156, 156, 156);
+}
+/*.error {
+  box-shadow: 0px 0px 10px rgb(255, 0, 0);
+}*/
+.success {
+  box-shadow: 0px 0px 10px rgb(0, 146, 34);
+}
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.success-message {
+  color: #4caf50;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  opacity: 0.7;
+}
+button:disabled {
+  background: #e8e8e8;
+  cursor: not-allowed;
+}
+.form-summary {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e9e9e9;
+  border-radius: 8px;
+  display: block;
+}
+.field-info {
+  font-size: 12px;
+  color: #666;
+  margin-top: 3px;
+}
+
+/* Form validate PHP */
+form label {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+form .error {
+  color: red;
+}
+
+form .error-box {
+  border: 1px solid red;
+  background-color: #ffe2e2;
+}
+
+.form-box-warning {
+  background-color: #fff3cd;
+  border-color: #ffd558;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+.form-box-danger {
+  background-color: rgb(255, 193, 193);
+  border-color: #c20000;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 12px;
+}
