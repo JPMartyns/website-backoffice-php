@@ -8,6 +8,7 @@ The front-end of this application showcases **original, award-winning photograph
 
 ### 🖼️ Front-end Images
 Here's a overview of the public website for clients:
+<br>
 <img src="assets/home.jpeg" alt="Home page" width="600"/>
 <img src="assets/gallery.jpeg" alt="Gallery/Portfolio page" width="600"/>
 <img src="assets/about.jpeg" alt="About page" width="600"/>
