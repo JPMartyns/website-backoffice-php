@@ -8,16 +8,16 @@ The front-end of this application showcases **original, award-winning photograph
 
 ### 🖼️ Front-end Images
 Here's a overview of the public website for clients:
-![Home page of the portfolio website](assets/home.jpeg)
-![Gallery/Portfolio page](assets/gallery.jpeg)
-![About page](assets/about.jpeg)
-![Form contacts page](assets/contacts.jpeg)
+<img src="assets/home.jpeg" alt="Home page" width="600"/>
+<img src="assets/gallery.jpeg" alt="Gallery/Portfolio page" width="600"/>
+<img src="assets/about.jpeg" alt="About page" width="600"/>
+<img src="assets/contacts.jpeg" alt="Form contacts page" width="600"/>
 
 ### 🖼️ Back-end Images
 Here's a overview of the Dashboard with dynamic statistics and some more images of the back office:
-![Dashboard overview of the Backoffice](assets/dashboard.jpeg)
-![Messages manage on Backoffice](assets/bo-contacts.jpeg)
-![Gallery manage on Backoffice](assets/bo-gallery.jpeg)
+<img src="assets/dashboard.jpeg" alt="Dashboard on backoffice" width="600"/>
+<img src="assets/bo-contacts.jpeg" alt="Messages manage on Backoffice" width="600"/>
+<img src="assets/bo-gallery.jpeg" alt="Gallery manage on Backoffice" width="600"/>
 
 ## ✨ Core Features
 * **User Authentication:** Secure login/logout system for the Backoffice administrator.
